@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IMAGIDREAM STUDIOS - Coming Soon</title>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="images/logos/ig_logo.png">
+    <meta name="description" content="This is the IMAGIDREAM STUDIOS indie game developer home page.">
+	<meta name="keywords" content="imagidream, indie games, studio, mikromacaroni">
+    <meta content="IMAGIDREAM STUDIOS" property="og:title">
+    <meta content="Coming Soon..." property="og:description">
+    <meta content="https://www.imagidream.net/" property="og:url">
+    <meta content="https://www.imagidream.net/images/logos/ig_logo.png" property="og:image">
+    <meta content="#ff91f9" data-react-helmet="true" name="theme-color">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="main.css" rel="stylesheet">
+    <style>
+        /* animation thingies */
+        @keyframes logo-anim {
+            0% {opacity:0;}
+            50% {opacity:0.75;}
+            100% {opacity:0;}
+        }
+        @keyframes text-anim {
+            0% {color:#ececec00;}
+            100% {color:#ececec;}
+        }
+        @keyframes textspan-anim {
+            0% {color:#64ff7900;}
+            100% {color:#64ff79;}
+        }
+        @keyframes link-anim {
+            0% {color:#ff91fa00;}
+            100% {color:#ff91f9;}
+        }
+        @keyframes button-anim {
+            0% {
+                background-color: #57408d00;
+                color:#ffffff00;
+            }
+            100% {
+                background-color: #57408d;
+                color:#ffffff;
+            }
+        }
+
+        body {
+            padding-bottom:18.5%;
+        }
+        article img {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            opacity: 0;
+            animation-name: logo-anim;
+            animation-duration: 5s;
+            animation-delay: 2.5s;
+            animation-iteration-count: infinite;
+        }
+        h2,h3,p {
+            text-align:center;
+            color:#ececec;
+            margin-left:5px;
+            margin-right:5px;
+            animation-name: text-anim;
+            animation-duration: 2s;
+        }
+        h2 {
+            font-size:1.95em;
+        }
+        p {
+            font-size:1.35em;
+        }
+        article span.green {
+            color:#64ff7900;
+            font-weight: 700;
+            animation-name: textspan-anim;
+            animation-duration: 2s;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+        }
+        h3 {
+            font-size:1.75em;
+        }
+        nav h3 {
+            margin-bottom:15px;
+        }
+        nav a {
+            display: block;
+            text-align: center;
+            font-size:2em;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: #57408d;
+            color:#ffffff;
+            margin-left:30%;
+            margin-right:30%;
+            padding:5px;
+            border-radius: 15px;
+            transition-property: background-color,color;
+            transition-duration: 0.25s;
+            animation-name: button-anim;
+            animation-duration: 2s;
+        }
+        nav a:hover {
+            background-color: #ffffff;
+            color:#57408d;
+        }
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height:7.5%;
+            background-color: #141414;
+            padding-bottom:15px;
+            font-size: clamp(0.75em, 2vw, 1em);
+        }
+        footer a {
+            color:#ff91fa;
+            text-decoration: none;
+            animation-name: link-anim;
+            animation-duration: 2s;
+        }
+        footer a:hover {
+            color:#ffd8fd;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logos/ig_logo.png" alt="imagidream logo" style="width:75px;height:auto;">
+        <h1>IMAGIDREAM STUDIOS</h1>
+    </header>
+    <article>
+        <h2>Coming Soon...</h2>
+        <img src="images/logos/mb_site_logo.png" alt="game logo" style="width:20.5%;height:auto;">
+        <p>IMAGIDREAM STUDIOS is currently working on a new project... <span class="green">Stay tuned!</span></p>
+    </article>
+    <nav>
+        <h3>Check out the webserver archive for other projects and older stuff!</h3>
+        <a href="archive">Archive</a>
+    </nav>
+    <footer>
+        <p>&copy;2026 IMAGIDREAM STUDIOS, server hosted by <a href="https://mikromacaroni.carrd.co/">MikroMacaroni</a></p>
+    </footer>
+</body>
+</html>

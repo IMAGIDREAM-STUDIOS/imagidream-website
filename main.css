@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:Orbitron;
+    src: url("fonts/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
+
+@keyframes header-img-anim {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes header-txt-anim {
+    0% {
+        color:#ffffff00;
+        letter-spacing:1em;
+    }
+    100% {
+        color:#ffffff;
+        letter-spacing:0.5em;
+    }
+}
+
+body {
+    background-color: #202020;
+    margin:0px;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+    font-family:Orbitron,Arial,sans-serif;
+}
+
+header {
+    background-color: #313131;
+}
+
+header img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:12.5px;
+    animation-name: header-img-anim;
+    animation-duration: 2s;
+}
+
+header h1 {
+    text-align:center;
+    color:#ffffff00;
+    font-size: clamp(1em,2vh,2em);
+    margin-top:5px;
+    padding:5px;
+    letter-spacing:1em;
+    animation-name: header-txt-anim;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
